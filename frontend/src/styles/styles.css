@@ -1,3 +1,4 @@
+@import "~normalize.css";
 :root {
     --main-black-color: #393D46;
     --main-grey-color: #F6F7FB;
@@ -15,6 +16,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
 }
 
 img {
@@ -63,7 +71,7 @@ a {
     align-items: center;
     font-size: 24px;
     line-height: 1.5;
-    font-family: 'Playfair Display SC';
+    font-family: 'Playfair Display';
 }
 
 .logo-icon {
@@ -107,4 +115,56 @@ a {
 .user-corner {
     display: flex;
     align-items: center;
+}
+
+
+/* HERO  */
+
+.hero {
+    position: relative;
+    padding: 99px 0 125px 0;
+    width: 35%;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-grey-color);
+}
+
+.hero-title {
+    font-family: 'Playfair Display';
+    font-size: 96px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: var(--main-black-color);
+}
+
+.hero-subtitle {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--main-black-color);
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--main-black-color);
+    margin-top: 32px;
+    margin-bottom: 56px;
+}
+
+.hero-btn {
+    padding: 12px 91px 12px 33px;
+    background-color: var(--main-black-color);
+    color: var(--white-color);
+}
+
+.hero-btn::after {
+    content: "\2192";
+    top: 481px;
+    color: var(--white-color);
+    font-size: 29px;
+    margin-left: 26px;
+    position: absolute;
 }
