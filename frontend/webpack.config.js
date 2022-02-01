@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -90,13 +90,19 @@ const plugins = () => {
             to: path.resolve(__dirname, 'dist')
         }, {
             from: path.resolve(__dirname, 'src', 'images', 'img1.jpg'),
-            to: path.resolve(__dirname, 'dist', )
+            to: path.resolve(__dirname, 'dist')
         }, {
             from: path.resolve(__dirname, 'src', 'images', 'img4.jpg'),
-            to: path.resolve(__dirname, 'dist', )
+            to: path.resolve(__dirname, 'dist')
         }, {
             from: path.resolve(__dirname, 'src', 'images', 'img3.jpg'),
-            to: path.resolve(__dirname, 'dist', )
+            to: path.resolve(__dirname, 'dist')
+        }, {
+            from: path.resolve(__dirname, 'src', 'images', 'img5.jpg'),
+            to: path.resolve(__dirname, 'dist')
+        }, {
+            from: path.resolve(__dirname, 'src', 'images', 'img9.jpg'),
+            to: path.resolve(__dirname, 'dist')
         }]),
         new MiniCssExtractPlugin({
             filename: filename('css')
@@ -121,7 +127,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.json', '.png', '.svg'],
+        extensions: ['.js', '.json', '.png'],
     },
     optimization: optimization(),
     devServer: {

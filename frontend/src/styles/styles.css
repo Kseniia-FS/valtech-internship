@@ -1,4 +1,14 @@
     @import "~normalize.css";
+    /*
+    Common styles *54
+    Cart-btn  *308
+    Header  *60
+    Hero *118
+    Categories  *174
+    Arrivals  *268
+
+    */
+    
      :root {
         --main-black-color: #393D46;
         --main-grey-color: #F6F7FB;
@@ -201,6 +211,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 32px;
     }
     
     .pseudo-wrap {
@@ -263,4 +274,88 @@
     
     .categories-item--icon:hover {
         fill: var(--white-color);
+    }
+    /* ARRIVALS */
+    
+    .arrivals {
+        padding-bottom: 100px;
+        display: flex;
+    }
+    
+    .arrivals-product {
+        display: flex;
+        padding: 32px 32px;
+        width: 800px;
+        background-color: var(--main-grey-color);
+        margin-right: 32px;
+    }
+    
+    .arrivals-product--img {
+        width: 380px;
+        height: 630px;
+        margin-right: 48px;
+        background-color: var(--no-image-color);
+    }
+    
+    .arrivals-product--title {
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.5;
+        color: var(--main-black-color);
+    }
+    
+    .arrivals-prodact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .arrivals-product--price {
+        color: var(--secondary-black-color);
+        margin-bottom: 24px;
+    }
+    
+    .cart-btn {
+        padding: 16.5px 47px;
+    }
+    
+    .arrivals-list {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: calc(-1 * var(--card-set-gap));
+        margin-top: calc(-1 * var(--card-set-gap));
+    }
+    
+    .arrivals-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
+        margin-left: 32px;
+        margin-top: 32px;
+        background-color: var(--main-grey-color);
+        width: 242px;
+        cursor: pointer;
+    }
+    
+    .arrivals-item-img {
+        width: 177px;
+        height: 177px;
+        background-color: var(--no-image-color);
+    }
+    
+    .arrivals-item-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.5;
+        color: var(--main-black-color);
+    }
+    
+    .arrivals-item--price {
+        color: var(--secondary-black-color);
     }
