@@ -407,3 +407,52 @@
     .featured-item--price {
         margin-bottom: 8px;
     }
+    /* SUMMER COLLECTIONS */
+    
+    .collections-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.5;
+        color: var(--white-color);
+        margin-bottom: 45px;
+    }
+    
+    .collections-list {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: calc(-1 * var(--card-set-gap));
+        margin-top: calc(-1 * var(--card-set-gap));
+    }
+    
+    .collections-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
+        margin-left: 32px;
+        margin-top: 32px;
+        padding: 146px 59px;
+        background-color: var(--no-image-color);
+    }
+    
+    .collections-item--title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 1.5;
+    }
+    
+    .collections-item--title span {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.5;
+    }
+    /* POPULAR */
+    
+    .popular {
+        padding-top: 200px;
+    }

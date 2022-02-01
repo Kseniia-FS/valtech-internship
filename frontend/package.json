@@ -44,6 +44,7 @@
         "gh-pages": "^3.2.3",
         "jquery": "^3.4.1",
         "lodash": "^4.17.15",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "owl.carousel": "^2.3.4"
     }
 }
