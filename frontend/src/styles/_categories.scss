@@ -110,8 +110,10 @@
 
 .categories-item:hover {
     background-color: var(--main-black-color);
-}
-
-.categories-item--icon:hover {
-    fill: var(--white-color);
+    .categories-item--title {
+        color: var(--white-color);
+    }
+    .categories-item--icon {
+        fill: var(--white-color);
+    }
 }
