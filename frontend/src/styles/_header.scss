@@ -56,6 +56,10 @@
     margin-right: 80px;
     text-decoration: none;
     color: var(--main-black-color);
+    &:hover {
+        text-decoration: none;
+        color: var( --secondary-black-color);
+    }
 }
 
 .header_nav-link:last-child {

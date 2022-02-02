@@ -16,6 +16,7 @@
 .rating-mini {
     display: inline-block;
     font-size: 0;
+    cursor: pointer;
 }
 
 .rating-mini span {
@@ -45,7 +46,6 @@
 
 .popular-item {
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: start;
     flex-basis: calc(100% / 1 - var(--card-set-gap));
