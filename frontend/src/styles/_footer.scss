@@ -1,0 +1,98 @@
+.footer {
+    background-color: var(--main-black-color);
+    color: var(--white-color);
+}
+
+.footer-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+    padding-top: 65px;
+    padding-bottom: 85px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: calc(-1 * var(--card-set-gap));
+        margin-top: calc(-1 * var(--card-set-gap));
+        padding-top: 65px;
+        padding-bottom: 85px;
+    }
+}
+
+.footer-chunk {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-basis: calc(100% / 6 - var(--card-set-gap));
+    margin-left: 32px;
+    margin-top: 32px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-basis: calc(100% / 1 - var(--card-set-gap));
+        margin-left: 32px;
+        margin-top: 32px;
+    }
+    h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+}
+
+.footer-chunk:first-child {
+    margin-left: 0;
+}
+
+.footer-chunk--list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    li {
+        margin-bottom: 16px;
+    }
+    li:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+// .footer-chunk--list li:last-child {
+//     margin-bottom: 0px;
+// }
+.footer-socials {
+    display: flex;
+    li {
+        margin-right: 24px;
+    }
+    li:last-child {
+        margin-right: 0px;
+    }
+}
+
+.footer-chunk--input {
+    width: 384px;
+    height: 60px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-chunk h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    .footer-chunk--mob {
+        display: none;
+    }
+}

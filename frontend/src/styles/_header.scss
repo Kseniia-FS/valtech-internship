@@ -1,0 +1,90 @@
+.header {
+    @media screen and (max-width: 967px) {
+        background-color: var(--main-black-color);
+    }
+    @media screen and (min-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.mobile-menu {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5px;
+        a {
+            color: var(--white-color);
+            font-size: 10px;
+        }
+        @media screen and (min-width: 967px) {
+            display: none;
+        }
+    }
+}
+
+.header_logo-link {
+    display: none;
+    @media screen and (min-width: 967px) {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 1.5;
+        font-family: 'Playfair Display';
+    }
+}
+
+.header_logo-icon {
+    margin-right: 8px;
+}
+
+.header_nav {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: flex;
+        align-items: center;
+        padding: 35px 0;
+    }
+}
+
+.header_nav-link {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-right: 80px;
+    text-decoration: none;
+    color: var(--main-black-color);
+}
+
+.header_nav-link:last-child {
+    margin-right: unset;
+}
+
+.header_icon-search {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: block;
+        margin-right: 32px;
+    }
+}
+
+.header_search-input {
+    display: none;
+}
+
+.header-btn {
+    display: none;
+    @media screen and (min-width: 968px) {
+        padding: 16.5px 28.5px;
+        margin-left: 58px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.header_user-corner {
+    display: flex;
+    align-items: center;
+}

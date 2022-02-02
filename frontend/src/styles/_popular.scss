@@ -1,0 +1,78 @@
+.popular {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 968px) {
+        padding-top: 200px;
+        padding-bottom: 150px;
+    }
+}
+
+
+/* RAITING */
+
+
+/* ************************************************************* */
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+
+.rating-mini>span:before {
+    content: '★';
+}
+
+.rating-mini>span.active {
+    color: gold;
+}
+
+
+/* ******************************************************************** */
+
+.popular-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.popular-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    flex-basis: calc(100% / 1 - var(--card-set-gap));
+    margin-left: 32px;
+    margin-top: 32px;
+    padding: 4px;
+    @media screen and (min-width: 768px) {
+        justify-content: start;
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
+        margin-left: 32px;
+        margin-top: 32px;
+        padding: 24px;
+    }
+}
+
+.popular-item-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--main-black-color);
+    margin-bottom: 8px;
+}
+
+.popular-item-img {
+    width: 225px;
+    height: 160px;
+    background-color: var(--no-image-color);
+    margin-right: 16px;
+}

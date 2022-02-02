@@ -1,0 +1,36 @@
+.clients {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.clients-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: 32px;
+    margin-top: 32px;
+    padding: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .clients-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: calc(100% / 1 - var(--card-set-gap));
+        width: 190px;
+        margin-left: 32px;
+        margin-top: 32px;
+        padding: 12px;
+    }
+}
