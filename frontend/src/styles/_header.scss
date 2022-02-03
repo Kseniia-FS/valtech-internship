@@ -80,7 +80,8 @@
 
 .header-btn {
     display: none;
-    @media screen and (min-width: 968px) {
+    @media screen and (min-width: 768px) {
+        display: block;
         padding: 16.5px 28.5px;
         margin-left: 58px;
         font-size: 18px;
