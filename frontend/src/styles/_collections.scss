@@ -1,0 +1,48 @@
+@media screen and (max-width: 1350px) {
+    .summer-collection {
+        display: none;
+    }
+}
+
+.collections__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.5;
+    color: var(--white-color);
+    margin-bottom: 45px;
+}
+
+.collections__list {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.collections__item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: 32px;
+    margin-top: 32px;
+    padding: 146px 59px;
+    background-color: var(--no-image-color);
+}
+
+.collections__item--title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.collections__item--title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.5;
+}
