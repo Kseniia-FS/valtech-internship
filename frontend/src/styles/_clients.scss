@@ -3,14 +3,14 @@
     padding-bottom: 100px;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     flex-flow: row wrap;
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.clients-item {
+.clients__item {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .clients-item {
+    .clients__item {
         display: flex;
         align-items: center;
         flex-direction: column;

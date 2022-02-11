@@ -4,7 +4,7 @@
     }
 }
 
-.collections-title {
+.collections__title {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -13,7 +13,7 @@
     margin-bottom: 45px;
 }
 
-.collections-list {
+.collections__list {
     position: absolute;
     width: 100%;
     display: flex;
@@ -22,7 +22,7 @@
     margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.collections-item {
+.collections__item {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -33,14 +33,14 @@
     background-color: var(--no-image-color);
 }
 
-.collections-item--title {
+.collections__item--title {
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 1.5;
 }
 
-.collections-item--title span {
+.collections__item--title span {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;

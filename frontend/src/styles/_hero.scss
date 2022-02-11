@@ -11,7 +11,7 @@
     height: 700px;
 }
 
-.hero-title {
+.hero__title {
     font-family: 'Playfair Display';
     font-size: 90px;
     font-weight: normal;
@@ -19,13 +19,13 @@
     color: var(--main-black-color);
 }
 
-.hero-subtitle {
+.hero__subtitle {
     font-size: 64px;
     font-weight: bold;
     color: var(--main-black-color);
 }
 
-.hero-text {
+.hero__text {
     font-size: 18px;
     line-height: 1.8;
     color: var(--main-black-color);

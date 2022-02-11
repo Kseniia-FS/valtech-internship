@@ -3,7 +3,7 @@
     display: flex;
 }
 
-.arrivals-product {
+.arrivals__product {
     display: flex;
     padding: 32px 32px;
     width: 800px;
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .arrivals-product {
+    .arrivals__product {
         display: block;
         padding: 12px 12px;
         width: 100%;
@@ -20,7 +20,7 @@
     }
 }
 
-.arrivals-product--img {
+.arrivals__product--img {
     width: 380px;
     height: 630px;
     margin-right: 48px;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .arrivals-product--img {
+    .arrivals__product--img {
         width: 95%;
         height: 200px;
         margin-right: 8px;
@@ -36,7 +36,7 @@
     }
 }
 
-.arrivals-product--title {
+.arrivals__product--title {
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -45,14 +45,14 @@
     color: var(--main-black-color);
 }
 
-.arrivals-prodact-info {
+.arrivals__prodact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.arrivals-product--price {
+.arrivals__product--price {
     color: var(--secondary-black-color);
     margin-bottom: 24px;
 }
@@ -61,7 +61,7 @@
     padding: 16.5px 47px;
 }
 
-.arrivals-list {
+.arrivals__list {
     display: flex;
     flex-flow: row wrap;
     margin-left: calc(-1 * var(--card-set-gap));
@@ -69,12 +69,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .arrivals-list {
+    .arrivals__list {
         display: none;
     }
 }
 
-.arrivals-item {
+.arrivals__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,13 +87,13 @@
     cursor: pointer;
 }
 
-.arrivals-item-img {
+.arrivals__item-img {
     width: 177px;
     height: 177px;
     background-color: var(--no-image-color);
 }
 
-.arrivals-item-title {
+.arrivals__item-title {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -101,6 +101,6 @@
     color: var(--main-black-color);
 }
 
-.arrivals-item--price {
+.arrivals__item--price {
     color: var(--secondary-black-color);
 }

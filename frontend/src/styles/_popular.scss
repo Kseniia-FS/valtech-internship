@@ -37,14 +37,14 @@
 
 /* ******************************************************************** */
 
-.popular-list {
+.popular__list {
     display: flex;
     flex-flow: row wrap;
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.popular-item {
+.popular__item {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -61,7 +61,7 @@
     }
 }
 
-.popular-item-title {
+.popular__item-title {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -70,7 +70,7 @@
     margin-bottom: 8px;
 }
 
-.popular-item-img {
+.popular__item-img {
     width: 225px;
     height: 160px;
     background-color: var(--no-image-color);
