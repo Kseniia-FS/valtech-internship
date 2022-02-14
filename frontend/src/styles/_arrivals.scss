@@ -58,7 +58,10 @@
 }
 
 .cart-btn {
-    padding: 16.5px 47px;
+    padding: 4px;
+    @media screen and (min-width: 768px) {
+        padding: 16.5px 47px;
+    }
 }
 
 .arrivals__list {

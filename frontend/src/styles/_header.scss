@@ -55,10 +55,15 @@
     font-weight: normal;
     margin-right: 80px;
     text-decoration: none;
-    color: var(--main-black-color);
-    &:hover {
+    color: var(--white-color);
+    &:hover,
+     :active {
         text-decoration: none;
-        color: var( --secondary-black-color);
+        color: var( --accent-color);
+        border-bottom: var(--accent-color) 1px solid;
+    }
+    @media screen and (min-width: 968px) {
+        color: var(--main-black-color);
     }
 }
 
@@ -80,7 +85,7 @@
 
 .header-btn {
     display: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 968px) {
         display: block;
         padding: 16.5px 28.5px;
         margin-left: 58px;
@@ -90,6 +95,9 @@
 }
 
 .header__user-corner {
-    display: flex;
-    align-items: center;
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: flex;
+        align-items: center;
+    }
 }

@@ -32,6 +32,10 @@ button {
     cursor: pointer;
     background-color: var(--main-black-color);
     color: var(--white-color);
+    &:hover,
+     :active {
+        background-color: var(--accent-color);
+    }
 }
 
 a {

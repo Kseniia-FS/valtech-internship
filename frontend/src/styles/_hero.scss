@@ -35,7 +35,7 @@
 
 .hero-btn {
     padding: 12px 91px 12px 33px;
-    background-color: var(--main-black-color);
+    background-color: var(--accent-color);
     color: var(--white-color);
 }
 
@@ -52,6 +52,7 @@
     height: 700px;
     // min-width: 968px;
     width: 1200px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 968px) {
