@@ -75,6 +75,7 @@
 .categories__item--link {
     display: flex;
     justify-content: center;
+    text-decoration: none;
     /* background-color: var(--main-grey-color); */
     flex-direction: column;
     align-items: center;
@@ -116,5 +117,8 @@
     }
     .categories__item--icon {
         fill: var( --accent-color);
+    }
+    .categories__item--link {
+        text-decoration: none;
     }
 }
