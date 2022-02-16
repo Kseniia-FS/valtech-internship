@@ -1,12 +1,15 @@
 const express = require("express");
 
-const homePageController = require('../controllers/homepage')
+const { homePage, productsListPage } = require('../controllers')
 
 const router = express.Router();
 
 
 //GET /homepage
-router.get("/homepage", homePageController);
+router.get("/homepage", homePage);
+
+//GET Product List Page
+router.get("/products", productsListPage)
 
 
 
