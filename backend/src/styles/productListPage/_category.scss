@@ -1,5 +1,6 @@
 .product-list {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .product-list--wrap {
@@ -85,7 +86,7 @@
     padding: 4px;
     border: transparent 1px solid;
     @media screen and (min-width: 768px) {
-        flex-basis: calc(100% / 5 - var(--card-set-gap));
+        flex-basis: calc(100% / 4 - var(--card-set-gap));
         margin-left: 32px;
         margin-top: 32px;
         width: 242px;

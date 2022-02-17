@@ -28,7 +28,9 @@ app.use(express.static("root"));
 app.use(express.static("public"));
 
 
-app.engine('hbs', hbs.express4());
+app.engine('hbs', hbs.express4({
+    partialsDir: path.join(__dirname + '/src/views/partials')
+}));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname + '/src/views'));
 

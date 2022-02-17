@@ -74,6 +74,12 @@
     }
 }
 
+.active__link {
+    text-decoration: none;
+    color: var( --accent-color);
+    border-bottom: var(--accent-color) 1px solid;
+}
+
 .header__nav-link:last-child {
     margin-right: unset;
 }

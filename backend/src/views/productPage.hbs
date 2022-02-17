@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+      <!-- HEADER     -->
+  {{> header}}
+  {{!-- Product Card --}}
+  <section class="container-shop product__page">
+      <div class="product__card">
+          <img src={{product.image}} alt="" class="product__card-img">
+      <div>
+          <h2 class="product__card--title">{{product.title}}</h2>
+          <div class="product__card--price"><span>$</span><span>{{product.price}}
+          </span></div>
+          <p class="product__card--descr">{{product.descr}}</p>
+          <div class="product__card--quantity">
+              <p class="product__card--q">Quantity</p>
+              
+                    <button class="product__card--btn plus" type="button" name="button" id="plus">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+                         <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                    </svg>
+                </button>
+                <input type="text" value="1" id="input" class="product__card--input" />
+                <button class="product__card--btn minus" type="button" name="button" id="minus">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+                     <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+                     </svg>
+                </button>
+               
+           </div>
+            <button type="button" class="button cart-btn ">Add to Cart</button>
+      </div>
+      </div>
+  </section>
+  {{> footer}}
+</body>
+</html>
