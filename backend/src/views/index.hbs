@@ -173,7 +173,7 @@
         <ul class="popular__list">
             {{#each products}}
             <li class="popular__item">
-                <img src="{{this.image}}" alt="product-photo" class="popular__item-img">
+               <a href="/product/{{this._id}}" class="popular__item-img"> <img src="{{this.image}}" alt="product-photo" class="popular__item-img"></a>
                 <div>
                     <h3 class="popular__item-title">{{this.title}}</h3>
                     <div class="featured__item--price"><span>$</span><span>{{this.price}}</span></div>

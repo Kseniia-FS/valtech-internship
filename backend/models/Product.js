@@ -9,7 +9,8 @@ const product = new Schema({
     brand: String,
     category: String,
     collectionOf: String,
-    image: String
+    image: String,
+    images: Array
 }, { versionKey: false, timestamps: true });
 
 const Product = model("product", product);
