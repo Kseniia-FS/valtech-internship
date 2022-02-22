@@ -57,6 +57,12 @@ module.exports = {
     mode: 'development',
     entry: {
         main: ['@babel/polyfill', './js/index.js'],
+        modal: "./js/modal.js",
+        addToCartFromThumbs: "./js/addToCartFromThumbs.js",
+        quantity: "./js/quantity.js",
+        cart: "./js/cart.js",
+        shoppingCart: "./js/shoppingCart.js"
+
     },
     output: {
         filename: filename('js'),
@@ -97,6 +103,11 @@ module.exports = {
                     loader: 'babel-loader',
                     options: babelOptions('@babel/preset-env')
                 }
+            },
+            {
+                test: /\.hbs/,
+                loader: 'handlebars-loader',
+                exclude: /(node_modules|bower_components)/
             }
         ]
     }

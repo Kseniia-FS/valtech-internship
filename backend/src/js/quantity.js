@@ -1,10 +1,11 @@
-import getRefs from "./refs";
-const refs = getRefs();
+const plusBtn = document.getElementById("plus");
+const minusBtn = document.getElementById("minus");
+const quantityInput = document.querySelector("#quantity");
 
 
-refs.plusBtn.addEventListener("click", increment);
-refs.minusBtn.addEventListener("click", decrement);
-refs.productCard.addEventListener("click", addTtoCart);
+plusBtn.addEventListener("click", increment);
+minusBtn.addEventListener("click", decrement);
+
 
 let counterValue = 1;
 
@@ -18,15 +19,15 @@ function addTtoCart(e) {
         const productId = searchParams.get("productID");
 
         const product = getOneProduct(productId);
-        console.log(product);
+
     }
 }
 
 function increment() {
     counterValue += 1;
-    refs.quantityInput.textContent = counterValue;
+    quantityInput.textContent = counterValue;
     if (counterValue <= 0) {
-        refs.quantityInput.textContent = 1;
+        quantityInput.textContent = 1;
     }
 
 
@@ -35,10 +36,10 @@ function increment() {
 function decrement() {
     counterValue -= 1;
 
-    refs.quantityInput.textContent = counterValue;
+    quantityInput.textContent = counterValue;
 
     if (counterValue <= 0) {
-        refs.quantityInput.textContent = 1;
+        quantityInput.textContent = 1;
     }
 
 }
