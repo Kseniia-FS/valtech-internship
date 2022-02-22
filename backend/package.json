@@ -5,8 +5,10 @@
     "main": "index.js",
     "scripts": {
         "start": "cross-env NODE_ENV=production node ./bin/server.js",
-        "dev": "cross-env NODE_ENV=development nodemon ./bin/server.js . & npm run scss",
-        "scss": "sass --watch src/scss/main.scss public/styles/main.css"
+        "dev": "cross-env NODE_ENV=development nodemon ./bin/server.js . & npm run scss ",
+        "scss": "sass --watch src/scss/main.scss public/styles/main.css",
+        "webp": "cross-env NODE_ENV=development webpack --mode development",
+        "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
     },
     "author": "",
     "license": "ISC",
@@ -20,7 +22,20 @@
         "mongoose": "^6.2.1",
         "node-sass": "^7.0.1",
         "nodemon": "^2.0.15",
-        "sass": "^1.49.7"
-
+        "sass": "^1.49.7",
+        "webpack": "^5.69.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.16.11",
+        "babel-loader": "^8.2.3",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.6.0",
+        "less-loader": "^10.2.0",
+        "mini-css-extract-plugin": "^2.5.3",
+        "sass-loader": "^12.6.0",
+        "style-loader": "^3.3.1",
+        "webpack-cli": "^4.9.2"
     }
 }

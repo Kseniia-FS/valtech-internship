@@ -1,8 +1,16 @@
-const { getAllProducts } = require("../services");
+const { getAllProducts, getProductsByCategory } = require("../services");
 
 const productListPage = async(req, res) => {
+    const { category, page, limit } = req.query;
+    let products;
 
-    const products = await getAllProducts(1, 16);
+
+    if (category === "all") {
+        products = await getAllProducts(page, limit);
+    } else {
+        products = await getProductsByCategory(category);
+    }
+
 
     return res.render("productListPage", {
         products

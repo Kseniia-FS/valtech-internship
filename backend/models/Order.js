@@ -3,7 +3,7 @@ const { Schema, model } = mongoose;
 
 const order = new Schema({
 
-    orderNumber: Number,
+    completed: Boolean,
     products: Array,
     totalSum: Number,
     owner: {

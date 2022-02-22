@@ -1,10 +1,10 @@
 <ul class="featured__list">
     {{#each products}}
-    <li class="featured__item--product">
-               <a href="/product/{{this._id}}" class="featured__item-img"> <img  src={{this.image}}   alt="product-photo" class="featured__item-img"></a>
+    <li class="featured__item--product" name={{this.id}}>
+               <a href="/product?productID={{this._id}}" class="featured__item-img"> <img  src={{this.image}}   alt="product-photo" class="featured__item-img"></a>
                 <h3 class="featured__item-title">{{this.title}}</h3>
                 <div class="featured__item--price"><span>$</span><span>{{this.price}}</span></div>
-                <button type="button" class="button cart-btn featured-btn">Add to Cart</button>
+                <button type="button" class="button cart-btn featured-btn" id="addBtn">Add to Cart</button>
             </li>
     {{/each }}
 </ul>

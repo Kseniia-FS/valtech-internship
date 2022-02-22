@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { homePage, productsListPage, productPage } = require('../controllers')
+const { homePage, productsListPage, productPage, shoppingCart, checkout, completed } = require('../controllers')
 
 const router = express.Router();
 
@@ -11,8 +11,17 @@ router.get("/homepage", homePage);
 //GET Product List Page
 router.get("/products", productsListPage);
 
-// GET one product
-router.get("/product/:productID", productPage)
+// GET Product Details Page
+router.get("/product", productPage);
+
+//GET Shopping Cart
+router.get("/cart", shoppingCart);
+
+// GET Checkout
+router.get("/checkout", checkout)
+
+// GET Completed order
+router.get("/completed", completed)
 
 
 

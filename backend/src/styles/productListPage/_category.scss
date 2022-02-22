@@ -20,6 +20,7 @@
 
 .product-list--a {
     padding-top: 59px;
+    min-width: 70%;
 }
 
 .categories__title {
@@ -62,6 +63,23 @@
     }
 }
 
+.sidebar__item--link {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        & svg {
+            fill: var(--accent-color);
+        }
+    }
+    & span:hover {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+}
+
 .sidebar__title {
     font-weight: 500;
     font-size: 18px;
@@ -78,7 +96,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-basis: calc(100% / 2 -12px);
+    flex-basis: calc(100% / 2 - 12px);
     width: 45%;
     margin-left: 12px;
     margin-top: 12px;
