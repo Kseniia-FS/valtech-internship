@@ -1,0 +1,121 @@
+// Mobile menu
+.menu-toggle {
+    position: absolute;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--no-image-color);
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    &:hover,
+     :focus {
+        color: var(--accent-color);
+    }
+    @media (min-width: 968px) {
+        display: none;
+    }
+}
+
+.menu-contrainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    &.is-open {
+        transform: translateX(0);
+    }
+    & .menu-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: var(--no-image-color);
+        &:hover,
+         :focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.mobile__list {
+    list-style: none;
+}
+
+.mobile__item {
+    margin-bottom: 32px;
+}
+
+.mobile__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--no-image-color);
+    &:hover,
+     :focus {
+        color: var(--accent-color);
+    }
+}
+
+.mobile__list--contacts {
+    position: absolute;
+    left: 40px;
+    bottom: 134px;
+    list-style: none;
+}
+
+.mobile__item--contacts {
+    margin-bottom: 32px;
+}
+
+.mobile__link--number {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.333;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.mobile__link--mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    color: var(--main-black-color);
+}
+
+.mobile__socials--list {
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    & .mobile__socials--link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
+}
+
+.mobile__socials--item:nth-child(-n + 3):after {
+    content: '';
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin: 0 10px;
+}
+
+.current__mobile {
+    color: var(--accent-color);
+}
