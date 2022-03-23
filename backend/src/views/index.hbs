@@ -37,7 +37,7 @@
     <section class="container-shop categories">
         <div class="categories__title--help">
             <h2 class="categories__title">Categories</h2>
-            <div class="pseudo-wrap"> <a href="" class="categories__link">View all</a></div>
+            <div class="pseudo-wrap"> <a href="/products?page=1&limit=16&category=all" class="categories__link">View all</a></div>
         </div>
         <ul class="categories__list">
             <li class="categories__item" name="jacket  id="category"">
@@ -95,14 +95,14 @@
     <section class="container-shop">
         <div class="categories__title--help">
             <h2 class="categories__title">New Arrivals</h2>
-            <div class="pseudo-wrap"> <a href="" class="categories__link">View all</a></div>
+            <div class="pseudo-wrap"> <a href="/new-arrivals?page=1&limit=16" class="categories__link">View all</a></div>
         </div>
 
         <div class="arrivals">
             <div class="arrivals__product">
                 <img src="./img1.jpg" alt="product" class="arrivals__product--img">
                 <div class="arrivals__prodact-info">
-                    <h3 class="arrivals__product--title">Purple Warm Jacket</h3>
+                    <h3 class="arrivals__product--title">Awesome watch</h3>
                     <div class="arrivals__product--price"><span>$</span><span>299</span></div>
                     <button type="button" class="button cart-btn" id="addBtn">Add to Cart</button>
                 </div>
@@ -110,22 +110,22 @@
             <ul class="arrivals__list">
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
-                    <h3 class="arrivals__item-title">Blue Grey Warm Jacket</h3>
+                    <h3 class="arrivals__item-title">Watch</h3>
                     <div class="arrivals__item--price"><span>$</span><span>299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
-                    <h3 class="arrivals__item-title">Denim Jacket</h3>
+                    <h3 class="arrivals__item-title">Denim Watch</h3>
                     <div class="arrivals__item--price"><span>$</span><span>299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
-                    <h3 class="arrivals__item-title">Black Jacket</h3>
+                    <h3 class="arrivals__item-title">Black Watch</h3>
                     <div class="arrivals__item--price"><span>$</span><span>299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
-                    <h3 class="arrivals__item-title">Green Polar Jacket</h3>
+                    <h3 class="arrivals__item-title">Watch</h3>
                     <div class="arrivals__item--price"><span>$</span><span>299</span></div>
                 </li>
             </ul>
@@ -135,7 +135,7 @@
     <section class="container-shop featured">
         <div class="categories__title--help">
             <h2 class="categories__title">Featured</h2>
-            <div class="pseudo-wrap"> <a href="" class="categories__link">View all</a></div>
+            <div class="pseudo-wrap"> <a href="/products?page=1&limit=16&category=all" class="categories__link">View all</a></div>
         </div>
         <ul class="featured__list">
             {{> product-thumb}}
@@ -168,12 +168,12 @@
     <section class="container-shop popular">
         <div class="categories__title--help">
             <h2 class="categories__title">Popular This Week</h2>
-            <div class="pseudo-wrap"> <a href="" class="categories__link">View all</a></div>
+            <div class="pseudo-wrap"> <a href="/new-arrivals?page=1&limit=8" class="categories__link">View all</a></div>
         </div>
         <ul class="popular__list">
             {{#each products}}
             <li class="popular__item">
-               <a href="/product/{{this._id}}" class="popular__item-img"> <img src="{{this.image}}" alt="product-photo" class="popular__item-img"></a>
+               <a href="/product?productID={{this._id}}" class="popular__item-img"> <img src="{{this.image}}" alt="product-photo" class="popular__item-img"></a>
                 <div>
                     <h3 class="popular__item-title">{{this.title}}</h3>
                     <div class="featured__item--price"><span>$</span><span>{{this.price}}</span></div>
@@ -263,7 +263,7 @@
                     <path d="M89.3525 19.375C88.4775 19.2292 87.5296 19.1562 86.5088 19.1562C82.7171 19.1562 80.1442 20.7708 78.79 24V48H73.0088V14.1875H78.6338L78.7275 18.0938C80.6234 15.0729 83.3109 13.5625 86.79 13.5625C87.915 13.5625 88.7692 13.7083 89.3525 14V19.375Z" fill="#9F9F9F"/>
                     <path d="M100.165 14.1875L100.353 18.4375C102.936 15.1875 106.311 13.5625 110.478 13.5625C117.623 13.5625 121.228 17.5938 121.29 25.6562V48H115.509V25.625C115.488 23.1875 114.925 21.3854 113.821 20.2188C112.738 19.0521 111.04 18.4688 108.728 18.4688C106.853 18.4688 105.207 18.9688 103.79 19.9688C102.373 20.9688 101.269 22.2812 100.478 23.9062V48H94.6963V14.1875H100.165Z" fill="#9F9F9F"/>
                     <path d="M136.29 48H130.509V14.1875H136.29V48ZM130.04 5.21875C130.04 4.28125 130.321 3.48958 130.884 2.84375C131.467 2.19792 132.321 1.875 133.446 1.875C134.571 1.875 135.425 2.19792 136.009 2.84375C136.592 3.48958 136.884 4.28125 136.884 5.21875C136.884 6.15625 136.592 6.9375 136.009 7.5625C135.425 8.1875 134.571 8.5 133.446 8.5C132.321 8.5 131.467 8.1875 130.884 7.5625C130.321 6.9375 130.04 6.15625 130.04 5.21875Z" fill="#9F9F9F"/>
-                    <path d="M155.009 32.3438L151.384 36.125V48H145.603V0H151.384V29.0312L154.478 25.3125L165.009 14.1875H172.04L158.884 28.3125L173.571 48H166.79L155.009 32.3438Z" fill="#9F9F9F"/>
+    -+                <path d="M155.009 32.3438L151.384 36.125V48H145.603V0H151.384V29.0312L154.478 25.3125L165.009 14.1875H172.04L158.884 28.3125L173.571 48H166.79L155.009 32.3438Z" fill="#9F9F9F"/>
                     </svg>
             </li>
             <li class="clients__item">
@@ -289,8 +289,12 @@
 
 
  
+   <script src="dist/mobileMenu.js"></script>
    <script src="dist/addToCartFromThumbs.js"></script>
    <script src="dist/modal.js"></script>
+   <script src="dist/register.js"></script>
+    <script src="dist/favorite.js"></script>
+   <script src="dist/compare.js"></script>
  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

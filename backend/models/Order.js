@@ -13,6 +13,6 @@ const order = new Schema({
     },
 }, { versionKey: false, timestamps: true });
 
-const Order = model("contact", order);
+const Order = model("order", order);
 
 module.exports = Order;

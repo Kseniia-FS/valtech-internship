@@ -28,7 +28,7 @@ const babelOptions = preset => {
             '@babel/preset-env'
         ],
         plugins: [
-            '@babel/plugin-proposal-class-properties'
+            '@babel/plugin-transform-runtime'
         ]
     }
 
@@ -60,8 +60,17 @@ module.exports = {
         modal: "./js/modal.js",
         addToCartFromThumbs: "./js/addToCartFromThumbs.js",
         quantity: "./js/quantity.js",
-        cart: "./js/cart.js",
-        shoppingCart: "./js/shoppingCart.js"
+        shoppingCart: "./js/shoppingCart.js",
+        addToCartFromPDP: "./js/addToCartFromPDP.js",
+        register: "./js/register.js",
+        checkout: "./js/checkout.js",
+        search: "./js/search.js",
+        filter: "./js/filter.js",
+        mobileMenu: "./js/mobileMenu.js",
+        favorite: "./js/addToFavorite.js",
+        compare: "./js/addToCompare.js",
+        favoriteList: "./js/favorite.js",
+        compareList: "./js/compare.js"
 
     },
     output: {

@@ -5,13 +5,14 @@
     {{> header}}
     {{! SideBar }}
     <section class="container-shop product-list">
+      
       <h1 class="categories__title">Product List</h1>
      <div class="product-list--wrap">
        <div class="sidebar">
         <h4 class="sidebar__title">Categories</h4>
         <ul class="sidebar__list">
 
-          <li class="sidebar__item" name="jacket"><a href="/products?page=1&limit=16&category=jacket " class="sidebar__item--link"><svg
+          <li class="sidebar__item" name="jacket"><a href="/products?page=1&limit=16&category=jacket" class="sidebar__item--link"><svg
               class="sidebar__item--icon"
               width="32"
               height="32"
@@ -95,48 +96,62 @@
             </a></li>
         </ul>
         <h4 class="sidebar__title">Filter by Price</h4>
-        <ul class="sidebar__list">
-          <li class="sidebar__item no-border">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+        <ul class="sidebar__list" id="priceList" style="margin-left: 20px;">
+          <li class="sidebar__item no-border ">
+            <input type="radio" id="price1" name="price" class="filter-input" style=" appearance: none;"  />
+           <label class="sidebar__item--title check-item" for="price1">
+             
               All Price
             </label>
 
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+          <li class="sidebar__item ">
+             <input type="radio" id="price2" name="price" class="filter-input" style=" appearance: none;" value="100-250"/ >
+            <label class="sidebar__item--title check-item" for="price2"  value="100-250">
+            
               $100 - $250
             </label>
-
+             
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+          <li class="sidebar__item ">
+             <input type="radio" id="price3" name="price" class="filter-input" style=" appearance: none;" value="250-500" />
+            <label class="sidebar__item--title check-item" for="price3" value="250-500">
+             
               $250 - $500
             </label>
 
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
-              $750 - $1.000
+          <li class="sidebar__item ">
+             <input type="radio" id="price4" name="price" class="filter-input" style=" appearance: none;" value="500-750" />
+            <label class="sidebar__item--title check-item" for="price4" value="500-750">
+             
+              $500 - $750
             </label>
 
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
-              $1000 - $1.500
+          <li class="sidebar__item ">
+             <input type="radio" id="price5" name="price" class="filter-input" style=" appearance: none;" value="750-1000" />
+            <label class="sidebar__item--title check-item" for="price5" value="750-1000">
+             
+              $750 - $1000
+            </label>
+
+          </li>
+          <li class="sidebar__item ">
+            <input type="radio" id="price6" name="price" class="filter-input" style=" appearance: none;" value="1000-1500"/>
+            <label class="sidebar__item--title check-item" for="price6" value="1000-1500">
+              
+              $1000 - $1500
             </label>
 
           </li>
         </ul>
         <h4 class="sidebar__title">Filter by Rating</h4>
-        <ul class="sidebar__list">
-          <li class="sidebar__item no-border">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+        <ul class="sidebar__list" style="margin-left: 20px;"  id="rating-list">
+          <li class="sidebar__item no-border " >
+             <input type="radio" id="rating1" name="rating"  style=" appearance: none;"  class="filter-input" value="1"/>
+            <label class="sidebar__item--title check-item" for="rating1" value="1">
+             
               <div class="rating-mini">
                 <span class="active"></span>
 
@@ -144,9 +159,10 @@
             </label>
 
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+          <li class="sidebar__item ">
+             <input type="radio" id="rating2" name="rating" style=" appearance: none;" class="filter-input"value="2" />
+            <label class="sidebar__item--title check-item" for="rating2" value="2">
+             
               <div class="rating-mini">
                 <span class="active"></span>
                 <span class="active"></span>
@@ -155,9 +171,24 @@
             </label>
 
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+          <li class="sidebar__item ">
+             <input type="radio" id="rating3" name="rating" style=" appearance: none;" class="filter-input" value="3"/>
+            <label class="sidebar__item--title check-item" for="rating3" value="3">
+             
+              <div class="rating-mini">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+               
+
+              </div>
+            </label>
+
+          </li>
+          <li class="sidebar__item ">
+            <input type="radio" id="rating4" name="rating" style=" appearance: none;"class="filter-input" value="4"/>
+            <label class="sidebar__item--title check-item" for="rating4" value="4">
+              
               <div class="rating-mini">
                 <span class="active"></span>
                 <span class="active"></span>
@@ -168,22 +199,10 @@
             </label>
 
           </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
-              <div class="rating-mini">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-
-              </div>
-            </label>
-
-          </li>
-          <li class="sidebar__item">
-            <label class="sidebar__item--title">
-              <input type="checkbox" id="price" name="" />
+          <li class="sidebar__item ">
+            <input type="radio" id="rating5" name="rating" style=" appearance: none;" class="filter-input" value="5"/>
+            <label class="sidebar__item--title check-item" for="rating5" value="5">
+              
               <div class="rating-mini">
                 <span class="active"></span>
                 <span class="active"></span>
@@ -196,34 +215,35 @@
           </li>
         </ul>
       </div>
-      <div class="product-list--a">
-          <ul class="featured__list">
+      <div class="product-list--a" style="display: flex;
+    
+    flex-direction: column; align-items: center;">
+          <ul class="featured__list" id="productList">
             {{> product-thumb}}
           </ul>
+          <button id="loadBtn" class="button cart-btn" style="width: 300px;">Load more</button>
       </div>
+      
      </div>
     </section>
     {{!-- Footer --}}
     {{> footer}}
-     <!-- Mobile-header -->
-    <div class="mobile__header">
-        <a href="" class="mobile__header-item mobile__header-item--wa">
-            <p>
-                Collcections
-            </p>
-        </a>
-        <a href="" class="mobile__header-item mobile__header-item--call">
-            <p>New Arrivals</p>
-        </a>
-    </div>
+  
  <!-- Mobile-header -->
    {{> mobile-menu}}
     <!-- Modal -->
      {{> modal}}
-    {{!-- <script src="dist/main.js"></script> --}}
-         
+    
+    <script src="dist/mobileMenu.js"></script>
    <script src="dist/addToCartFromThumbs.js"></script>
    <script src="dist/modal.js"></script>
+   <script src="dist/register.js"></script>
+   <script src="dist/search.js"></script>
+   <script src="dist/filter.js"></script>
+   <script src="dist/favorite.js"></script>
+   <script src="dist/compare.js"></script>
+
+
    
   </body>
 </html>

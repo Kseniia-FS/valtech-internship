@@ -13,7 +13,9 @@ const userSchema = new Schema({
         },
         name: String,
         adress: String,
-        phone: String
+        phone: String,
+        token: { type: String, default: null },
+        bonus: { type: Number, default: 0 },
     },
 
     { versionKey: false, timestamps: true }

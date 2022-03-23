@@ -17,11 +17,11 @@
   <div class="carousel-inner">
      
     <div class="carousel-item active">
-      <img class="d-block w-100 h-523 " src={{product.image}} >
+      <img id="pdpImage" class="d-block w-100 h-523 " src={{product.image}} >
     </div>
    {{#each product.images}}
     <div class="carousel-item">
-      <img class="d-block w-100 h-523" src={{this}} >
+      <img  class="d-block w-100 h-523" src={{this}} >
     </div>
     <div class="carousel-item">
       <img class="d-block w-100 h-523" src={{this}}>
@@ -37,17 +37,19 @@
   </a>
 </div>
       <div>
+          <a id="productID"  href="id={{product._id}}"></a>
+          <h2 id="pdpTitle" class="product__card--title">{{product.title}}</h2>
+          <div  class="product__card--price"><span>$</span><span id="pdpPrice">{{product.price}}
+          </span>
           
-          <h2 class="product__card--title">{{product.title}}</h2>
-          <div class="product__card--price"><span>$</span><span>{{product.price}}
-          </span></div>
+          </div>
           <p class="product__card--descr">{{product.descr}}</p>
           <div class="product__card--quantity">
               <p class="product__card--q">Quantity</p>
               {{> quantity}}
                
            </div>
-            <button type="button" class="button cart-btn" id="addBtn">Add to Cart</button>
+            <button type="button" class="button cart-btn" id="addToCart">Add to Cart</button>
       </div>
       </div>
   </section>
@@ -55,15 +57,23 @@
    
    <div class="categories__title--help">
             <h2 class="categories__title">Similiar Product</h2>
-            <div class="pseudo-wrap"> <a href="" class="categories__link">View all</a></div>
+            <div class="pseudo-wrap"> <a href="/products?page=1&limit=16&category=all" class="categories__link">View all</a></div>
         </div>
   {{> product-thumbs}}
   </section>
   {{> footer}}
   <!-- Modal -->
    {{> modal}}
+   <!-- Mobile-header -->
+   {{> mobile-menu}}
+    <script src="dist/mobileMenu.js"></script>
    <script src="dist/quantity.js"></script>
      <script src="dist/modal.js"></script>
+     <script src="dist/addToCartFromPDP.js"></script>
+     <script src="dist/register.js"></script>
+      <script src="dist/favorite.js"></script>
+   <script src="dist/compare.js"></script>
+    
    
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

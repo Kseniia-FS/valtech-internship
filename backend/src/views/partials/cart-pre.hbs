@@ -2,7 +2,7 @@
    <section class="cart__table">
    
   <ul id="cart-table"> 
-     <li class="cart__table-body">
+     <li class="cart__table-body" id="titleForCart">
       <div class="cart__table-data ">Product</div>
       <div class="cart__table-data">Quantity</div>
       <div class="cart__table-data">Price</div>
@@ -21,11 +21,11 @@
             <div class="cart__bottom-wrap">
                 <div class="cart__bottom-wrap--total">
                     <p class="cart__bottom--total">Total</p>
-                    <p class="cart__bottom--price">$6000</p>
+                    <p id="total" class="cart__bottom--price">$</p>
                 </div>
                 <div>
-                    <a href="/products" class="cart__bottom-wrap--btn">Continue Shopping</a>
-                    <a   href="/checkout" class="cart__bottom-wrap--btn">Checkout</a>
+                    <a href="/products?page=1&limit=16&category=all" class="cart__bottom-wrap--btn">Continue Shopping</a>
+                    <a id="checkoutBtn"  href="/checkout" class="cart__bottom-wrap--btn">Checkout</a>
                 </div>
             </div>
 
