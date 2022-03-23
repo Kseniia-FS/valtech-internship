@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ {{>head}}
+  <body>
+
+      {{>header}}
+    <h3 style="text-align: center; margin-top: 50px; margin-bottom: 50px; font-size: 35px; ">We will be glad to see you in our shop! Have a good day!</h3>
+    
+    <p style="margin-left: 100px; font-size: 24px;">20 W 34th St, New York, NY 10001, USA</p>
+    
+    <!--The div element for the map -->
+    <div id="map"></div>
+ 
+
+
+ <script>
+     function initMap() {
+    // The location of Uluru
+    const shop = { lat: 40.76479196037802, lng: -73.9907060163263 };
+  
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: shop, 
+       
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+        position: shop,
+        map: map,
+    });
+}
+  
+ </script>
+   {{!-- Footer --}}
+    {{> footer}}
+
+      <!-- Modal -->
+   {{> modal}}
+    {{> mobile-menu}}
+    <script src="dist/mobileMenu.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS54JTPUBPcCYwqUwhhmXJin9ajWvJqMU&callback=initMap"> defer
+</script>
+
+<script src="dist/modal.js"></script>
+   <script src="dist/register.js"></script>
+
+  </body>
+</html>

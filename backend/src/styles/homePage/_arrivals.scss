@@ -1,0 +1,110 @@
+.arrivals {
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.arrivals__product {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: flex;
+        padding: 32px 32px;
+        width: 800px;
+        background-color: var(--main-grey-color);
+        margin-right: 32px;
+    }
+}
+
+// @media screen and (max-width: 768px) {
+//     .arrivals__product {
+//         display: block;
+//         padding: 12px 12px;
+//         width: 100%;
+//         background-color: var(--main-grey-color);
+//     }
+// }
+.arrivals__product--img {
+    width: 380px;
+    height: 630px;
+    margin-right: 48px;
+    background-color: var(--no-image-color);
+}
+
+@media screen and (max-width: 768px) {
+    .arrivals__product--img {
+        width: 95%;
+        height: 200px;
+        margin-right: 8px;
+        background-color: var(--no-image-color);
+    }
+}
+
+.arrivals__product--title {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--main-black-color);
+}
+
+.arrivals__prodact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrivals__product--price {
+    color: var(--secondary-black-color);
+    margin-bottom: 24px;
+}
+
+.cart-btn {
+    padding: 4px;
+    @media screen and (min-width: 768px) {
+        padding: 16.5px 47px;
+    }
+}
+
+.arrivals__list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+// @media screen and (max-width: 768px) {
+//     .arrivals__list {
+//         display: none;
+//     }
+// }
+.arrivals__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: 32px;
+    margin-top: 32px;
+    background-color: var(--main-grey-color);
+    width: 242px;
+    cursor: pointer;
+}
+
+.arrivals__item-img {
+    width: 177px;
+    height: 177px;
+    background-color: var(--no-image-color);
+}
+
+.arrivals__item-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--main-black-color);
+}
+
+.arrivals__item--price {
+    color: var(--secondary-black-color);
+}

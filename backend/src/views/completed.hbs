@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+
+<body>
+ {{> header}}
+    <section class="container-shop cart">
+       <div class="checkout">
+  <div class="checkout__item">
+    <span>1</span>
+    <p>Shopping Cart</p>
+  </div>
+  <div  class="checkout__item">
+    <span>2</span>
+    <p>Checkout</p>
+  </div>
+  <div  class="checkout__item ">
+    <span>3</span>
+    <p>Completed</p>
+  </div>
+</div>
+
+<div class="completed">
+    <h2 class="completed__title">Checkout Complete!</h2>
+<p class="completed__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/> tempor incididunt ut labore et dolore magna aliqua. </p>
+<a href="/products?page=1&limit=16&category=all" class="completed-btn">Go Shopping Again</a>
+</div>
+    </section>
+
+    {{> footer}}
+
+     <!-- Modal -->
+   {{> modal}}
+    {{> mobile-menu}}
+    <script src="dist/mobileMenu.js"></script>
+   <script src="dist/modal.js"></script>
+    <script src="dist/register.js"></script>
+</body>
+
+</html>

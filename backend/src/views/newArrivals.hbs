@@ -1,0 +1,40 @@
+<html lang="en">
+  {{> head}}
+  <body>
+    <!-- HEADER     -->
+    {{> header}}
+    {{! SideBar }}
+    <section class="container-shop product-list">
+      <h1 class="categories__title">New Arrivals</h1>
+     
+      <div class="product-list--a" style="display: flex;
+    
+    flex-direction: column; align-items: center;">
+          <ul class="featured__list" id="productList">
+            {{> product-thumb}}
+          </ul>
+          <a 
+         href="/products?page=1&limit=16&category=all" id="loadBtn" class="button cart-btn" style="">All products</a>
+      </div>
+      
+     </div>
+    </section>
+    {{!-- Footer --}}
+    {{> footer}}
+  
+ <!-- Mobile-header -->
+   {{> mobile-menu}}
+    <!-- Modal -->
+     {{> modal}}
+          {{> mobile-menu}}
+    <script src="dist/mobileMenu.js"></script>
+   <script src="dist/addToCartFromThumbs.js"></script>
+   <script src="dist/modal.js"></script>
+   <script src="dist/register.js"></script>
+    <script src="dist/favorite.js"></script>
+   <script src="dist/compare.js"></script>
+  
+  
+   
+  </body>
+</html>

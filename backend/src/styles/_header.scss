@@ -1,0 +1,136 @@
+.header {
+    // position: fixed;
+    @media screen and (max-width: 967px) {
+        background-color: var(--white-color);
+        padding-top: 15px;
+        height: 50px;
+    }
+    @media screen and (min-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header__logo-link {
+    display: block;
+    text-decoration: none;
+    color: var(--main-black-color);
+    @media screen and (min-width: 967px) {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 1.5;
+        font-family: 'Playfair Display';
+    }
+    &:hover,
+     :active {
+        text-decoration: none;
+        color: var(--main-black-color);
+    }
+}
+
+.header__logo-icon {
+    margin-right: 8px;
+}
+
+.header__nav {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: flex;
+        align-items: center;
+        padding: 35px 0;
+    }
+}
+
+.header__nav-link {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-right: 80px;
+    text-decoration: none;
+    color: var(--white-color);
+    &:hover,
+     :active {
+        text-decoration: none;
+        color: var( --accent-color);
+        border-bottom: var(--accent-color) 1px solid;
+    }
+    @media screen and (min-width: 968px) {
+        color: var(--main-black-color);
+    }
+}
+
+.active__link {
+    text-decoration: none;
+    color: var( --accent-color);
+    border-bottom: var(--accent-color) 1px solid;
+}
+
+.header__nav-link:last-child {
+    margin-right: unset;
+}
+
+.header__icon-search {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: block;
+        margin-right: 32px;
+    }
+}
+
+.header__search-input {
+    display: none;
+}
+
+.search-visible {
+    display: block;
+    margin-right: 25px;
+}
+
+.header-btn {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: block;
+        padding: 16.5px 28.5px;
+        margin-left: 58px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.header__user-corner {
+    display: none;
+    @media screen and (min-width: 968px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.iconsWrapForHeader {
+    position: absolute;
+    top: 81px;
+    right: 13px;
+    @media screen and (min-width: 768px) {
+        top: 108px;
+        right: 143px;
+    }
+}
+
+#compareIcon {
+    width: 14px;
+    height: 14px;
+    @media screen and (min-width: 768px) {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+#favoriteIcon {
+    width: 14px;
+    height: 14px;
+    @media screen and (min-width: 768px) {
+        width: 25px;
+        height: 25px;
+    }
+}

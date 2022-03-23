@@ -1,0 +1,170 @@
+[{
+        "title": "Purple Warm Jacket",
+        "price": 367,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4,
+        "category": "jacket",
+        "collectionOf": "spring",
+        "image": "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Blue Warm Jacket",
+        "price": 299,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 3,
+        "category": "jacket",
+        "collectionOf": "spring",
+        "image": "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Warm Jacket",
+        "price": 699,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4,
+        "category": "jacket",
+        "collectionOf": "spring",
+        "image": "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Pink Shirt",
+        "price": 733,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4,
+        "category": "jacket",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/11452292645773909/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Red Shirt",
+        "price": 733,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4,
+        "category": "shirt",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442026119322/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Pants",
+        "price": 733,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4,
+        "category": "pants",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Pants",
+        "price": 500,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 3,
+        "category": "pants",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Pants",
+        "price": 299,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 2,
+        "category": "pants",
+        "collectionOf": "autumn",
+        "image": "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/22250442025652307/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Boots",
+        "price": 499,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 2,
+        "category": "shoes",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Boots",
+        "price": 399,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 5,
+        "category": "shoes",
+        "collectionOf": "autumn",
+        "image": "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg"
+    },
+    {
+        "title": "Boots",
+        "price": 499,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 2,
+        "category": "shoes",
+        "collectionOf": "autumn",
+        "image": "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005221998550/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Dress",
+        "price": 299,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4,
+        "category": "dress",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Dress",
+        "price": 699,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 2,
+        "category": "dress",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Dress",
+        "price": 999,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 2,
+        "category": "dress",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/24772899113571896/in/w920_q60.jpg"]
+    },
+    {
+        "title": "Sunglasses",
+        "price": 999,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 5,
+        "category": "acces",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg"]
+    },
+    {
+        "title": "Sunglasses",
+        "price": 399,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 2,
+        "category": "acces",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg"]
+    },
+    {
+        "title": "Sunglasses",
+        "price": 299,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 5,
+        "category": "acces",
+        "collectionOf": "summer",
+        "image": "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg",
+        "images": ["https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg", "https://www.net-a-porter.com/variants/images/15546005222029232/ou/w920_q60.jpg"]
+    }
+]
