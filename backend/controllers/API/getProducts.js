@@ -4,7 +4,6 @@ const getProductsForPagination = async(req, res) => {
     const { category, page, limit } = req.query;
     let products;
 
-
     if (category === "all") {
         products = await getAllProducts(page, limit);
     } else {

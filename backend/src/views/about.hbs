@@ -7,7 +7,7 @@
     <section class="container-shop product-list">
       <h1 class="categories__title">Welcome to our amazing world of style and design!</h1>
 
-      <div style="margin-bottom: 50px; margin-top: 50px; font-size: 18px; ">
+      <div class="about-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, temporibus veritatis, molestiae cupiditate tenetur dignissimos beatae odit necessitatibus corporis autem debitis ipsam esse? Delectus vel ex, reiciendis minima enim ipsum.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, temporibus veritatis, molestiae cupiditate tenetur dignissimos beatae odit necessitatibus corporis autem debitis ipsam esse? Delectus vel ex, reiciendis minima enim ipsum.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, temporibus veritatis, molestiae cupiditate tenetur dignissimos beatae odit necessitatibus corporis autem debitis ipsam esse? Delectus vel ex, reiciendis minima enim ipsum.
@@ -23,45 +23,35 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, temporibus veritatis, molestiae cupiditate tenetur dignissimos beatae odit necessitatibus corporis autem debitis ipsam esse? Delectus vel ex, reiciendis minima enim ipsum.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, temporibus veritatis, molestiae cupiditate tenetur dignissimos beatae odit necessitatibus corporis autem debitis ipsam esse? Delectus vel ex, reiciendis minima enim ipsum.
       </div>
-      <ul style="display: flex; margin-bottom: 70px; justify-content: center; flex-wrap: wrap;  margin-left: -24px;">
-          <li style="flex-basis: calc(100% / 4 - 32px); margin-bottom: 24px; margin-left: 24px;  display: flex; justify-content: center; align-items: center;" ><img style="width: 323px; height: 300px; object-fit:cover; border: 2px solid var(--accent-color); padding: 7px ; background-color: var(--accent-color);"  src="./about.jpg" /></li>
-          <li style="flex-basis: calc(100% / 4 - 32px); margin-bottom: 24px; margin-left: 24px;  display: flex; justify-content: center; align-items: center;"><img style="width: 323px; height: 300px; object-fit:cover; border: 2px solid var(--accent-color); padding: 7px ; background-color: var(--accent-color);" src="./about2.jpg" /></li>
-          <li style="flex-basis: calc(100% / 4 - 32px); margin-bottom: 24px; margin-left: 24px;  display: flex; justify-content: center; align-items: center;"><img style="width: 323px; height: 300px; object-fit:cover; border: 2px solid var(--accent-color); padding: 7px ; background-color: var(--accent-color);" src="./about3.jpg" /></li>
-          <li style="flex-basis: calc(100% / 4 - 32px); margin-bottom: 24px; margin-left: 24px;  display: flex; justify-content: center; align-items: center;" ><img style="width: 323px; height: 300px; object-fit:cover; border: 2px solid var(--accent-color); padding: 7px ; background-color: var(--accent-color);" src="./about4.jpg" /></li>
-
+      <ul class="about-list">
+          <li class="about-item" ><img class="about-item--img"  src="./about.jpg" /></li>
+          <li class="about-item"><img class="about-item--img" src="./about2.jpg" /></li>
+          <li class="about-item"><img class="about-item--img" src="./about3.jpg" /></li>
+          <li class="about-item" ><img class="about-item--img" src="./about4.jpg" /></li>
       </ul>
-     
 
       <h2 class="categories__title">New Arrivals</h2>
-      <div class="product-list--a" style="display: flex;
-    
-    flex-direction: column; align-items: center;">
+      <div class="product-list--a" >
           <ul class="featured__list" id="productList">
             {{> product-thumb}}
           </ul>
           <a href="/new-arrivals?page=1&limit=16" id="loadBtn" class="button cart-btn" style="">More New Arrivals</a>
       </div>
-      
      </div>
     </section>
     {{!-- Footer --}}
     {{> footer}}
-  
+
  <!-- Mobile-header -->
    {{> mobile-menu}}
     <!-- Modal -->
      {{> modal}}
       {{> mobile-menu}}
     <script src="dist/mobileMenu.js"></script>
-    
-         
    <script src="dist/addToCartFromThumbs.js"></script>
    <script src="dist/modal.js"></script>
    <script src="dist/register.js"></script>
    <script src="dist/favorite.js"></script>
    <script src="dist/compare.js"></script>
-  
-  
-   
   </body>
 </html>

@@ -5,24 +5,18 @@ require("dotenv").config();
 const { TOKEN_SECRET_KEY } = process.env;
 
 const registerOrLogin = async(req, res) => {
-
     const { name, email, password } = req.body;
-
-
     const user = await User.findOne({ email });
 
     if (!user) {
-
         const hashedPassword = await bcrypt.hash(password, 5);
-
-
-
         const newUser = await User.create({
             name,
             email,
             password: hashedPassword,
 
         });
+
         const token = jwt.sign({ user_id: newUser._id },
             TOKEN_SECRET_KEY, { expiresIn: "2h" }
         );
@@ -30,14 +24,12 @@ const registerOrLogin = async(req, res) => {
         newUser.token = token;
         await newUser.save();
 
-
         return res.status(201).json({
             message: "Success register",
             data: { token: newUser.token, id: newUser._id }
         });
 
     } else {
-
         const correctPassword = await bcrypt.compare(password, user.password);
 
         if (!correctPassword) {
@@ -50,12 +42,12 @@ const registerOrLogin = async(req, res) => {
 
         user.token = token;
         await user.save();
+
         return res.status(200).json({
             message: "Success login",
             data: { token: user.token, id: user._id }
         });
     }
-
 }
 
 module.exports = registerOrLogin;

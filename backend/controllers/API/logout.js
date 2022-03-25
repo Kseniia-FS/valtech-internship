@@ -2,7 +2,6 @@ const User = require("../../models/User");
 
 const logout = async(req, res) => {
     const { _id } = req.user;
-
     const user = await User.findById(_id);
 
     if (!user) {

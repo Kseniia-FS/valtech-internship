@@ -1,0 +1,31 @@
+.about-list {
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.about-item {
+    flex-basis: calc(100% / 4 - 32px);
+    margin-bottom: 24px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-item--img {
+    width: 323px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    padding: 7px;
+    background-color: var(--accent-color);
+}
+
+.about-text {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+}

@@ -1,5 +1,6 @@
 const compare = async(req, res) => {
-    res.render("compare");
+
+    return res.render("compare");
 }
 
 module.exports = compare;

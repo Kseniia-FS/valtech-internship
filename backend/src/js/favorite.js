@@ -37,6 +37,17 @@ if (!storage || storage === []) {
         const productID = e.target.parentElement.getAttribute("data-name");
 
         await fetch(`http://localhost:5000/productID/${productID}`).then(res => res.json()).then(data => {
+
+
+            const storage = cart.getItem("cart");
+
+            if (storage) {
+                const parsedStorage = JSON.parse(storage);
+
+                orders = [...parsedStorage];
+
+            }
+
             const { image, title, price } = data.data;
 
             const quantity = 1;

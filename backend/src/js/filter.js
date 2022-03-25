@@ -58,6 +58,7 @@ function filterByPrice(e) {
 
 
     if (allProductsBtn.includes("All")) {
+
         const price = [0];
         const secondPrice = 1500;
         getProducts(category, price, secondPrice)

@@ -23,6 +23,9 @@
 }
 
 .product-list--a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 59px;
     min-width: 70%;
 }

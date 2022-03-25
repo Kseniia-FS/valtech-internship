@@ -38,6 +38,16 @@ if (!storage || storage === []) {
 
 
         if (e.target.tagName.toLowerCase() === 'button') {
+
+            const storage = cart.getItem("cart");
+
+            if (storage) {
+                const parsedStorage = JSON.parse(storage);
+
+                orders = [...parsedStorage];
+
+            }
+
             const productID = e.target.parentElement.getAttribute("data-name");
 
 

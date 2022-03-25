@@ -7,7 +7,7 @@
   {{!-- Product Card --}}
   <section class="container-shop product__page">
       <div class="product__card">
-         
+
 <div id="product-slider" class="carousel slide product__card-slider" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,7 +15,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-     
+
     <div class="carousel-item active">
       <img id="pdpImage" class="d-block w-100 h-523 " src={{product.image}} >
     </div>
@@ -41,20 +41,20 @@
           <h2 id="pdpTitle" class="product__card--title">{{product.title}}</h2>
           <div  class="product__card--price"><span>$</span><span id="pdpPrice">{{product.price}}
           </span>
-          
+
           </div>
           <p class="product__card--descr">{{product.descr}}</p>
           <div class="product__card--quantity">
               <p class="product__card--q">Quantity</p>
               {{> quantity}}
-               
+
            </div>
             <button type="button" class="button cart-btn" id="addToCart">Add to Cart</button>
       </div>
       </div>
   </section>
   <section class="container-shop product__page">
-   
+
    <div class="categories__title--help">
             <h2 class="categories__title">Similiar Product</h2>
             <div class="pseudo-wrap"> <a href="/products?page=1&limit=16&category=all" class="categories__link">View all</a></div>
@@ -73,8 +73,6 @@
      <script src="dist/register.js"></script>
       <script src="dist/favorite.js"></script>
    <script src="dist/compare.js"></script>
-    
-   
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
