@@ -12,9 +12,10 @@ const chekoutBtn = document.querySelector("#checkoutBtn");
 
 // Rendering products
 if (!storage) {
-    cartTable.innerHTML = `<h2 style="text-align: center; margin-bottom: 200px;
-    font-size: 42px; color: var(--accent-color); font-weight: bold;">
-    Ooops, you didn't add any product!</h2>`;
+    const list = document.getElementById("cart-title");
+    const title = document.getElementById("no-prod-title");
+    list.innerHTML = '';
+    list.appendChild(title.content);
 }
 const markup = shoppingCart(parsedStorage);
 cartTable.insertAdjacentHTML("beforeend", markup);
@@ -145,7 +146,6 @@ function increment(quantityInputElement, quantityInput, productId) {
     }
 
     return counterValue;
-
 }
 
 function decrement(quantityInputElement, quantityInput, productId) {

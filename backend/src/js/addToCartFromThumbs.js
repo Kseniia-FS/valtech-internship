@@ -60,8 +60,9 @@ function addProductToCart(e) {
 
 // Listener for loading more products
 async function loadMore() {
-    const page = Number(window.location.search.slice(6)[0]);
-    const category = window.location.search.slice(26);
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = Number(urlParams.get("page"));
+    const category = urlParams.get("category");
 
     await fetch(`${BASE_URL}/products-list?page=${page+1}&limit=16&category=${category}`, {
         headers: {

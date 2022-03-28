@@ -4,13 +4,16 @@
 
 <body>
  {{> header}}
-    <section class="container-shop cart">
-        <h2 class="categories__title">Shopping Cart</h2>
+    <section class="container-shop cart" id="cart-title">
+        <h2 class="categories__title" >Shopping Cart</h2>
         {{> shopping-process}}
      {{> cart-pre}}
     </section>
 
     {{> footer}}
+    <template id="no-prod-title">
+   {{> no-product-title}}
+</template>
 
     <!-- Modal -->
    {{> modal}}

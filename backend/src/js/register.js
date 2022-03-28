@@ -1,11 +1,11 @@
 import Notiflix from 'notiflix';
 import BASE_URL from './../../cofig/url';
 
-const storage = window.localStorage;
 const formBtn = document.querySelector("#formBtn");
 const loginBtn = document.querySelector("#loginBtn");
 const modal = document.querySelector('[data-modal]');
 
+const storage = window.localStorage;
 const token = storage.getItem("token");
 
 // Condition for text in button to login

@@ -10,7 +10,6 @@ const productIdElem = document.querySelector("#productID");
 const cart = window.localStorage;
 let orders = []; // Array of orders for local storage
 
-
 button.addEventListener("click", addToCart);
 
 function addToCart(e) {

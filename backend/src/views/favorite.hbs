@@ -4,13 +4,15 @@
 
 <body>
  {{> header}}
-    <section class="container-shop cart">
+    <section class="container-shop cart" id="favorite-list">
         <h2 class="categories__title">Favorite List</h2>
      {{> favorite-pre}}
     </section>
 
     {{> footer}}
-
+<template id="no-prod-title">
+   {{> no-product-title}}
+</template>
     <!-- Modal -->
    {{> modal}}
     {{> mobile-menu}}

@@ -3,12 +3,15 @@
 
 <body>
  {{> header}}
-    <section class="container-shop cart">
+    <section class="container-shop cart"  id="compare-list">
         <h2 class="categories__title">Compare List</h2>
      {{> compare-pre}}
     </section>
 
     {{> footer}}
+<template id="no-prod-title">
+   {{> no-product-title}}
+</template>
 
     <!-- Modal -->
    {{> modal}}
