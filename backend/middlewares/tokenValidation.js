@@ -7,8 +7,6 @@ const tokenValidation = async(req, res, next) => {
     const { authorization = "" } = req.headers;
     const [tokenType, token] = authorization.split(" ");
 
-    // console.log(token)
-
     try {
         if (tokenType !== "Bearer") {
             throw new Error("Invalid tokenType");
@@ -17,15 +15,11 @@ const tokenValidation = async(req, res, next) => {
 
         const user = await User.findById(user_id);
 
-
-
         if (user.length === 0 || !user.token === null) {
             throw new Error("Not authorized");
-
         }
 
         req.user = user;
-        // console.log(req.user, "****************")
 
         next();
     } catch (error) {

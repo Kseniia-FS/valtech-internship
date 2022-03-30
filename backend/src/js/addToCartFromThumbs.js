@@ -1,20 +1,18 @@
 import Notiflix from 'notiflix';
+import BASE_URL from './../../cofig/url';
 const products = require("../views/partials/product-thumb-pag.hbs");
-
 
 const productList = document.querySelector("#productList");
 const list = document.querySelector(".featured__list");
 const loadMoreBtn = document.querySelector("#loadBtn");
 
-
 const cart = window.localStorage;
 let orders = [];
 
-
 list.addEventListener("click", addProductToCart);
 
+// Check the position of Load More button
 if (loadMoreBtn) {
-
     loadMoreBtn.addEventListener("click", loadMore);
 }
 
@@ -28,11 +26,8 @@ function addProductToCart(e) {
 
         if (storage) {
             const parsedStorage = JSON.parse(storage);
-
             orders = [...parsedStorage];
-
         }
-
 
         // Set new object for adding to cart
         const imgUrl = element.children[0].children[0].src;
@@ -44,8 +39,6 @@ function addProductToCart(e) {
         const quantity = 1;
         const total = quantity * normalPrice;
 
-
-
         const product = {
             productUrl,
             id: productId,
@@ -54,10 +47,7 @@ function addProductToCart(e) {
             price: normalPrice,
             quantity,
             total,
-
         };
-
-
 
         orders.push(product);
 
@@ -66,26 +56,20 @@ function addProductToCart(e) {
         Notiflix.Notify.success('Product successfully added to cart');
 
     }
-
-
 }
 
 // Listener for loading more products
-async function loadMore(e) {
-    const page = Number(window.location.search.slice(6)[0]);
-    const category = window.location.search.slice(26);
+async function loadMore() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = Number(urlParams.get("page"));
+    const category = urlParams.get("category");
 
-
-    await fetch(`http://localhost:5000/products-list?page=${page+1}&limit=16&category=${category}`, {
+    await fetch(`${BASE_URL}/products-list?page=${page+1}&limit=16&category=${category}`, {
         headers: {
             'Content-Type': 'application/json',
-
         }
     }).then(res => res.json()).then(data => {
-
         const markup = products(data.data);
         productList.insertAdjacentHTML("beforeend", markup);
-
-
     })
 }

@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 const order = new Schema({
-
     completed: Boolean,
     products: Array,
     totalSum: Number,

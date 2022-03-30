@@ -4,26 +4,22 @@
 
 <body>
  {{> header}}
-    <section class="container-shop cart">
+    <section class="container-shop cart" id="favorite-list">
         <h2 class="categories__title">Favorite List</h2>
-      
      {{> favorite-pre}}
     </section>
 
     {{> footer}}
-
+<template id="no-prod-title">
+   {{> no-product-title}}
+</template>
     <!-- Modal -->
    {{> modal}}
     {{> mobile-menu}}
     <script src="dist/mobileMenu.js"></script>
-
    <script src="dist/modal.js"></script>
-   {{!-- <script src="dist/addToCartFromThumbs.js"></script> --}}
    <script src="dist/register.js"></script>
    <script src="dist/favoriteList.js"></script>
-
-  
-
 </body>
 
 </html>

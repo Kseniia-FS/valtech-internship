@@ -1,6 +1,7 @@
 import Notiflix from 'notiflix';
+import BASE_URL from './../../cofig/url';
 
-
+// Function for opening and closing modal
 (() => {
     const refs = {
         openModalBtn: document.querySelector('[data-modal-open]'),
@@ -16,6 +17,7 @@ import Notiflix from 'notiflix';
     }
 })();
 
+// Bonus system for client
 const storage = window.localStorage;
 const bonusBtn = document.querySelector("#userBonus");
 
@@ -30,20 +32,18 @@ async function getBonus(e) {
         return;
     }
 
-    await fetch("http://localhost:5000/bonus", {
-
+    await fetch(`${BASE_URL}/bonus`, {
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
         }
     }).then(res => res.json()).then(data => {
-        console.log(data)
+
         if (data.status === 404) {
             Notiflix.Notify.warning("Sorry, you don't have bonus yet!");
             return;
         }
         Notiflix.Notify.success(`You bonus is ${data.data.bonus}`);
         return;
-
     })
 }

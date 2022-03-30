@@ -4,25 +4,24 @@
   <body>
 
       {{>header}}
-    <h3 style="text-align: center; margin-top: 50px; margin-bottom: 50px; font-size: 35px; ">We will be glad to see you in our shop! Have a good day!</h3>
-    
-    <p style="margin-left: 100px; font-size: 24px;">20 W 34th St, New York, NY 10001, USA</p>
-    
+    <h3 class="map-title">We will be glad to see you in our shop! Have a good day!</h3>
+
+    <p class="map-text">20 W 34th St, New York, NY 10001, USA</p>
     <!--The div element for the map -->
-    <div id="map"></div>
- 
+    {{!-- <div id="map"></div> --}}
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.602754628843!2d-73.98791348459399!3d40.748765779327925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a90897ddaf%3A0x5fd95bb4ffa32d23!2zMjAgVyAzNHRoIFN0LCBOZXcgWW9yaywgTlkgMTAxMTgsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1648121264810!5m2!1sru!2sua" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-
+{{!-- 
  <script>
      function initMap() {
     // The location of Uluru
     const shop = { lat: 40.76479196037802, lng: -73.9907060163263 };
-  
+
     // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 4,
-        center: shop, 
-       
+        center: shop,
+
     });
     // The marker, positioned at Uluru
     const marker = new google.maps.Marker({
@@ -31,7 +30,7 @@
     });
 }
   
- </script>
+ </script> --}}
    {{!-- Footer --}}
     {{> footer}}
 

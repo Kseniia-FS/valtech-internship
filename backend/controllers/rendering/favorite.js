@@ -1,5 +1,5 @@
 const favorite = async(req, res) => {
-    res.render("favorite")
+    res.render("favorite");
 }
 
 module.exports = favorite;

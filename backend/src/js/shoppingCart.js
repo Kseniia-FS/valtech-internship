@@ -1,6 +1,5 @@
 const shoppingCart = require("../views/partials/cart-item.hbs");
 
-
 // Get products from local storage
 const cart = window.localStorage;
 const storage = cart.getItem("cart");
@@ -11,56 +10,43 @@ const cartTable = document.querySelector("#cart-table");
 const total = document.querySelector("#total");
 const chekoutBtn = document.querySelector("#checkoutBtn");
 
-
-
-
 // Rendering products
-
 if (!storage) {
-    cartTable.innerHTML = `<h2 style="text-align: center; margin-bottom: 200px; font-size: 42px; color: var(--accent-color); font-weight: bold;">Ooops, you didn't add any product!</h2>`;
+    const list = document.getElementById("cart-title");
+    const title = document.getElementById("no-prod-title");
+    list.innerHTML = '';
+    list.appendChild(title.content);
 }
 const markup = shoppingCart(parsedStorage);
 cartTable.insertAdjacentHTML("beforeend", markup);
 
-
 // DOM elems after rendering products
 const itemSum = document.querySelectorAll("#itemSum");
-
-
 
 // Render total sum of all products
 getTotalSum();
 
-
 // Add listener for increment or decrement quantity of products
 cartTable.addEventListener("click", changeQuantityAndTotalSum);
-
 
 function changeQuantityAndTotalSum(e) {
 
     if (e.target.id === "plus") {
         const parent = e.target.parentElement.parentElement;
         const refs = getRefs(parent);
-
-
         const quantityInput = refs.quantityInputElement.textContent;
         const productId = refs.productUrl.href.split("=")[1];
         const price = Number(refs.priceElement.textContent.slice(1));
         const quantity = increment(refs.quantityInputElement, quantityInput, productId);
 
-
         refs.plusBtn.addEventListener("click", increment);
-
 
         let totalSum;
         totalSum = quantity * price;
-
         refs.totalSumOfProductElement.innerHTML = `$${totalSum}`;
         getTotalSum();
         setLocalStorage(productId, quantity, totalSum)
-
         refs.plusBtn.removeEventListener("click", increment);
-
     }
 
     if (e.target.id === "minus") {
@@ -71,10 +57,7 @@ function changeQuantityAndTotalSum(e) {
         const productId = refs.productUrl.href.split("=")[1];
         const quantityInput = refs.quantityInputElement.textContent;
         const quantity = decrement(refs.quantityInputElement, quantityInput, productId);
-
-
         refs.minusBtn.addEventListener("click", decrement);
-
 
         let totalSum;
         totalSum = quantity * price;
@@ -83,7 +66,6 @@ function changeQuantityAndTotalSum(e) {
         getTotalSum();
         setLocalStorage(productId, quantity, totalSum);
         refs.minusBtn.removeEventListener("click", increment);
-
     }
 
     if (e.target.id === "removeProductSvg") {
@@ -101,9 +83,7 @@ function changeQuantityAndTotalSum(e) {
         console.log(productId);
         removeProductFromCart(productId);
     }
-
 }
-
 
 // Helpers
 function getRefs(parent) {
@@ -115,8 +95,6 @@ function getRefs(parent) {
         totalSumOfProductElement: parent.querySelector("#itemSum"),
         quantityInputElement: parent.querySelector("#quantity"),
     }
-
-
 }
 
 function getTotalSum() {
@@ -125,7 +103,6 @@ function getTotalSum() {
     for (let i = 0; i < itemSum.length; i += 1) {
         const totalSumOfOneProduct = itemSum[i].textContent.slice(1);
         totalSumOfAllProducts += Number(totalSumOfOneProduct);
-
     }
 
     total.innerHTML = `$${totalSumOfAllProducts}`;
@@ -138,7 +115,6 @@ function setLocalStorage(productId, quantity, totalSum) {
             el.total = totalSum;
         }
     })
-
 
     cart.setItem("cart", JSON.stringify(parsedStorage));
 }
@@ -170,18 +146,16 @@ function increment(quantityInputElement, quantityInput, productId) {
     }
 
     return counterValue;
-
 }
-
 
 function decrement(quantityInputElement, quantityInput, productId) {
     let counterValue = Number(quantityInput);
     counterValue -= 1;
     quantityInputElement.textContent = counterValue;
+
     if (counterValue <= 0) {
         removeProductFromCart(productId);
     }
 
     return counterValue;
-
 }
