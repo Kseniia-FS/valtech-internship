@@ -11,8 +11,8 @@
 {{> svg-minus}}
 </button>
          </div>
-          <div id="productPrice" class="cart__table-data ">${{price}}</div>
-          <div id="itemSum" class="cart__table-data ">${{total}}</div>
+          <div id="productPrice" class="cart__table-data "><span id="currencySymbol">EUR</span><span id="changedPrice">{{this.price}}</span></div>
+          <div id="itemSum" class="cart__table-data ">{{total}}</div>
           <div class="cart__table-data "><button id="removeProductBtn" class="cart__table-btn">
 {{> svg-cross}}
 </button></div>

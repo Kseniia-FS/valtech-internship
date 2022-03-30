@@ -91,7 +91,7 @@
                 <img src="./img1.jpg" alt="product" class="arrivals__product--img">
                 <div class="arrivals__prodact-info">
                     <h3 class="arrivals__product--title">Awesome watch</h3>
-                    <div class="arrivals__product--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__product--price"><span>€</span><span>299</span></div>
                     <button type="button" class="button cart-btn" id="addBtn">Add to Cart</button>
                 </div>
             </div>
@@ -99,22 +99,22 @@
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span>€</span><span>299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Denim Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span>€</span><span>299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Black Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span>€</span><span>299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span>€</span><span>299</span></div>
                 </li>
             </ul>
         </div>
@@ -164,7 +164,7 @@
                <a href="/product?productID={{this._id}}" class="popular__item-img"> <img src="{{this.image}}" alt="product-photo" class="popular__item-img"></a>
                 <div>
                     <h3 class="popular__item-title">{{this.title}}</h3>
-                    <div class="featured__item--price"><span>$</span><span>{{this.price}}</span></div>
+                    <div class="featured__item--price"><span id="currencySymbol">€</span><span id="changedPrice">{{this.price}}</span></div>
                     <div class="rating-mini">
                         <span class="active"></span>
                         <span class="active"></span>
@@ -234,6 +234,8 @@
    <script src="dist/register.js"></script>
     <script src="dist/favorite.js"></script>
    <script src="dist/compare.js"></script>
+   <script src="dist/currency.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

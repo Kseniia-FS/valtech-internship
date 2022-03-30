@@ -70,7 +70,8 @@ module.exports = {
         favorite: "./js/addToFavorite.js",
         compare: "./js/addToCompare.js",
         favoriteList: "./js/favorite.js",
-        compareList: "./js/compare.js"
+        compareList: "./js/compare.js",
+        currency: "./js/currency.js"
 
     },
     output: {

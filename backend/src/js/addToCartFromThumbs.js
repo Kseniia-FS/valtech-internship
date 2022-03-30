@@ -34,8 +34,8 @@ function addProductToCart(e) {
         const productUrl = element.children[0].href;
         const productId = element.children[0].href.split('=')[1];
         const title = element.children[1].innerHTML;
-        const price = element.children[2].innerText;
-        const normalPrice = price.slice(1);
+        const price = element.children[3].innerText;
+        const normalPrice = price.slice(3);
         const quantity = 1;
         const total = quantity * normalPrice;
 
