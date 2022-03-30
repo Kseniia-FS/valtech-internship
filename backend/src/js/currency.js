@@ -25,7 +25,8 @@ async function onSelectCurrency(e) {
             const rates = data.rates;
             const priceList = document.querySelectorAll("#changedPrice");
             Array.from(priceList).map(el => {
-                el.innerText = Math.floor(Number(el.innerText) * rates[selectedCurrency]);
+                const firstPrice = el.getAttribute("data-value");
+                el.innerText = Math.floor(Number(firstPrice) * rates[selectedCurrency]);
             })
         })
     }

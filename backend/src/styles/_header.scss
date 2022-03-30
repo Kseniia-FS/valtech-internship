@@ -12,6 +12,24 @@
     }
 }
 
+.blink {
+    animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#userBonus {
+    color: var(--accent-color);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 36px;
+    text-decoration: blink;
+}
+
 .header__logo-link {
     display: block;
     text-decoration: none;

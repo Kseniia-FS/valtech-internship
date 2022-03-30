@@ -7,7 +7,7 @@
              <p>{{descr}}</p>
          </div>
          </div>
-          <div id="productPrice" class="cart__table-data "><span id="currencySymbol">EUR</span><span id="changedPrice">{{price}}</span></div>
+          <div id="productPrice" class="cart__table-data "><span id="currencySymbol">EUR</span><span id="changedPrice" data-value={{price}}>{{price}}</span></div>
           <button type="button" class="button cart-btn " id="addBtn" >Add to Cart</button>
           <div class="cart__table-data "><button id="removeProductBtn" data-name={{_id}} class="cart__table-btn">
              {{> svg-cross}}

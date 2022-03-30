@@ -39,8 +39,9 @@
       <div>
           <a id="productID"  href="id={{product._id}}"></a>
           <h2 id="pdpTitle" class="product__card--title">{{product.title}}</h2>
-          <div  class="product__card--price"><span>$</span><span id="pdpPrice">{{product.price}}
+          <div  class="product__card--price"><span id="currencySymbol">$</span><span id="changedPrice" data-value={{product.price}}>{{product.price}}
           </span>
+          {{!-- <span id="currencySymbol">EUR</span><span id="changedPrice">{{this.price}}</span> --}}
 
           </div>
           <p class="product__card--descr">{{product.descr}}</p>
