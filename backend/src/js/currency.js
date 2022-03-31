@@ -1,4 +1,4 @@
-import API_KEY from './../../cofig/API_KEY';
+import API_KEY from './../../cofig/currency_api/API_KEY';
 
 const storage = window.localStorage;
 const currencyFromStorage = storage.getItem("currency");
