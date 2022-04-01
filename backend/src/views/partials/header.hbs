@@ -7,20 +7,18 @@
         >
           {{> svg-openMenu}}
         </button>
-
       <a href="/homepage" class="header__logo-link">
        {{> svg-logo}}
         Elliye
       </a>
-
-      <nav class="header__nav">
+      <nav class="header__nav header-dn">
         <a href="/products?page=1&limit=16&category=all" class="header__nav-link">Categories</a>
         <a href="/new-arrivals?page=1&limit=16" class="header__nav-link">New Arrival</a>
         <a href="/about?page=1&limit=8" class="header__nav-link">About Us</a>
         <a href="/shops" class="header__nav-link">Our shops</a>
       </nav>
       <div class="header__user-corner">
-        <form class="header__nav" id="search-form">
+        <form class="header__nav header-dn" id="search-form">
            <p id="userBonus"  class="header__icon-search blink">BONUS</p>
             <input type="search" class="header__search-input" id="search" />
           <a href="/cart">
