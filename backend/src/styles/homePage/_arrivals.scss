@@ -14,14 +14,6 @@
     }
 }
 
-// @media screen and (max-width: 768px) {
-//     .arrivals__product {
-//         display: block;
-//         padding: 12px 12px;
-//         width: 100%;
-//         background-color: var(--main-grey-color);
-//     }
-// }
 .arrivals__product--img {
     width: 380px;
     height: 630px;
@@ -73,11 +65,6 @@
     margin-top: calc(-1 * var(--card-set-gap));
 }
 
-// @media screen and (max-width: 768px) {
-//     .arrivals__list {
-//         display: none;
-//     }
-// }
 .arrivals__item {
     display: flex;
     flex-direction: column;

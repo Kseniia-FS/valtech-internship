@@ -71,7 +71,8 @@ module.exports = {
         compare: "./js/addToCompare.js",
         favoriteList: "./js/favorite.js",
         compareList: "./js/compare.js",
-        currency: "./js/currency.js"
+        currency: "./js/currency.js",
+        backToTop: "./js/backToTop.js"
 
     },
     output: {

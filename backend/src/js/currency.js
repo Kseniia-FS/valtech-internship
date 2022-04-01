@@ -1,4 +1,4 @@
-import API_KEY from './../../cofig/currency_api/API_KEY';
+import CURRENCY_API_KEY from './../../cofig/currency_api/CURRENCY_API_KEY';
 
 const storage = window.localStorage;
 const currencyFromStorage = storage.getItem("currency");
@@ -21,7 +21,7 @@ async function onSelectCurrency(e) {
         const prodID = "#currencySymbol";
         setLocalStorage(prodID, selectedCurrency);
 
-        await fetch(`http://data.fixer.io/api/latest?access_key=${API_KEY}&symbols=USD,UAH,EUR,AED,GBP,CZK`).then(res => res.json()).then(data => {
+        await fetch(`http://data.fixer.io/api/latest?access_key=${CURRENCY_API_KEY}&symbols=USD,UAH,EUR,AED,GBP,CZK`).then(res => res.json()).then(data => {
             const rates = data.rates;
             const priceList = document.querySelectorAll("#changedPrice");
             Array.from(priceList).map(el => {
