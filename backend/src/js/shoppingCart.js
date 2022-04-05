@@ -36,14 +36,14 @@ function changeQuantityAndTotalSum(e) {
         const refs = getRefs(parent);
         const quantityInput = refs.quantityInputElement.textContent;
         const productId = refs.productUrl.href.split("=")[1];
-        const price = Number(refs.priceElement.textContent.slice(1));
+        const price = Number(refs.priceElement.textContent.slice(3));
         const quantity = increment(refs.quantityInputElement, quantityInput, productId);
 
         refs.plusBtn.addEventListener("click", increment);
 
         let totalSum;
         totalSum = quantity * price;
-        refs.totalSumOfProductElement.innerHTML = `$${totalSum}`;
+        refs.totalSumOfProductElement.innerHTML = `${totalSum}`;
         getTotalSum();
         setLocalStorage(productId, quantity, totalSum)
         refs.plusBtn.removeEventListener("click", increment);
@@ -53,7 +53,7 @@ function changeQuantityAndTotalSum(e) {
         const parent = e.target.parentElement.parentElement;
         const refs = getRefs(parent);
 
-        const price = Number(refs.priceElement.textContent.slice(1));
+        const price = Number(refs.priceElement.textContent.slice(3));
         const productId = refs.productUrl.href.split("=")[1];
         const quantityInput = refs.quantityInputElement.textContent;
         const quantity = decrement(refs.quantityInputElement, quantityInput, productId);
@@ -62,7 +62,7 @@ function changeQuantityAndTotalSum(e) {
         let totalSum;
         totalSum = quantity * price;
 
-        refs.totalSumOfProductElement.innerHTML = `$${totalSum}`;
+        refs.totalSumOfProductElement.innerHTML = `${totalSum}`;
         getTotalSum();
         setLocalStorage(productId, quantity, totalSum);
         refs.minusBtn.removeEventListener("click", increment);
@@ -72,7 +72,7 @@ function changeQuantityAndTotalSum(e) {
         const parent = e.target.parentElement.parentElement.parentElement;
         const refs = getRefs(parent);
         const productId = refs.productUrl.href.split("=")[1];
-        console.log(productId);
+
         removeProductFromCart(productId);
     }
 
@@ -80,7 +80,7 @@ function changeQuantityAndTotalSum(e) {
         const parent = e.target.parentElement.parentElement.parentElement.parentElement;
         const refs = getRefs(parent);
         const productId = refs.productUrl.href.split("=")[1];
-        console.log(productId);
+
         removeProductFromCart(productId);
     }
 }
@@ -101,11 +101,11 @@ function getTotalSum() {
     let totalSumOfAllProducts = 0;
 
     for (let i = 0; i < itemSum.length; i += 1) {
-        const totalSumOfOneProduct = itemSum[i].textContent.slice(1);
+        const totalSumOfOneProduct = itemSum[i].textContent;
         totalSumOfAllProducts += Number(totalSumOfOneProduct);
     }
 
-    total.innerHTML = `$${totalSumOfAllProducts}`;
+    total.innerHTML = `${totalSumOfAllProducts}`;
 }
 
 function setLocalStorage(productId, quantity, totalSum) {

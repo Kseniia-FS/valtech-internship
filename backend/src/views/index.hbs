@@ -12,7 +12,7 @@
             <h1 class="hero__title">Summer Sale</h1>
             <p class="hero__subtitle">50% Off</p>
             <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <a href="" class="button hero-btn">Shop Now</a>
+            <a href="/products?page=1&limit=16&category=all" class="button hero-btn">Shop Now</a>
         </div>
         <div id="slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -91,30 +91,29 @@
                 <img src="./img1.jpg" alt="product" class="arrivals__product--img">
                 <div class="arrivals__prodact-info">
                     <h3 class="arrivals__product--title">Awesome watch</h3>
-                    <div class="arrivals__product--price"><span>$</span><span>299</span></div>
-                    <button type="button" class="button cart-btn" id="addBtn">Add to Cart</button>
+                    <div class="arrivals__product--price"><span id="currencySymbol">EUR</span><span id="changedPrice" data-value="299">299</span></div>
                 </div>
             </div>
             <ul class="arrivals__list">
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span id="currencySymbol">EUR</span><span id="changedPrice" data-value="299">299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Denim Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span id="currencySymbol">EUR</span><span id="changedPrice" data-value="299">299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Black Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span id="currencySymbol">EUR</span><span id="changedPrice" data-value="299">299</span></div>
                 </li>
                 <li class="arrivals__item">
                     <img src="./img5.jpeg" alt="product-photo" class="arrivals__item-img">
                     <h3 class="arrivals__item-title">Watch</h3>
-                    <div class="arrivals__item--price"><span>$</span><span>299</span></div>
+                    <div class="arrivals__item--price"><span id="currencySymbol">EUR</span><span id="changedPrice" data-value="299">299</span></div>
                 </li>
             </ul>
         </div>
@@ -164,7 +163,7 @@
                <a href="/product?productID={{this._id}}" class="popular__item-img"> <img src="{{this.image}}" alt="product-photo" class="popular__item-img"></a>
                 <div>
                     <h3 class="popular__item-title">{{this.title}}</h3>
-                    <div class="featured__item--price"><span>$</span><span>{{this.price}}</span></div>
+                    <div class="featured__item--price"><span id="currencySymbol">€</span><span id="changedPrice" data-value={{this.price}}>{{this.price}}</span></div>
                     <div class="rating-mini">
                         <span class="active"></span>
                         <span class="active"></span>
@@ -234,7 +233,10 @@
    <script src="dist/register.js"></script>
     <script src="dist/favorite.js"></script>
    <script src="dist/compare.js"></script>
+   <script src="dist/currency.js"></script>
+   <script src="dist/backToTop.js"></script>
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

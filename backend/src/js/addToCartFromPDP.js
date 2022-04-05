@@ -1,6 +1,6 @@
 import Notiflix from 'notiflix';
 
-const productPrice = document.querySelector("#pdpPrice");
+const productPrice = document.querySelector("#changedPrice");
 const productImage = document.querySelector("#pdpImage");
 const productTitle = document.querySelector("#pdpTitle");
 const button = document.querySelector("#addToCart");

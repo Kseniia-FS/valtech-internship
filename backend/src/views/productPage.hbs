@@ -39,9 +39,8 @@
       <div>
           <a id="productID"  href="id={{product._id}}"></a>
           <h2 id="pdpTitle" class="product__card--title">{{product.title}}</h2>
-          <div  class="product__card--price"><span>$</span><span id="pdpPrice">{{product.price}}
+          <div  class="product__card--price"><span id="currencySymbol">$</span><span id="changedPrice" data-value={{product.price}}>{{product.price}}
           </span>
-
           </div>
           <p class="product__card--descr">{{product.descr}}</p>
           <div class="product__card--quantity">
@@ -73,7 +72,9 @@
      <script src="dist/register.js"></script>
       <script src="dist/favorite.js"></script>
    <script src="dist/compare.js"></script>
-
+   <script src="dist/currency.js"></script>
+<script src="dist/backToTop.js"></script>
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
